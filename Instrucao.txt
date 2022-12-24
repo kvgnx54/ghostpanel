@@ -1,0 +1,17 @@
+-> bibliotecas utilizadas
+1. os(pré-instalada)
+2. sys(pré-instalada)
+3. requests
+4. time(pré-instalada)
+
+-> Modo de usar
+Usar estes comandos no terminal do termux
+
+python3 -m pip install --upgrade pip
+cd
+cd ghostpanel
+python main.py
+
+-> No main.py
+No main.py inicializa e atualiza o código automaticamente.
+Ele também instala a biblioteca Requests.
