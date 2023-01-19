@@ -27,13 +27,13 @@ class menu():
             case _:
                 print("%s[%s!%s%s] %s%s%s"%(n,R,r,n,R,str(rspj["message"]),r));input("\n%s[%s+%s%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
     def cep():
-        _cep=input("%s[%s+%s%s] %sDigite o cep que deseja localizar:%s "%(n,B,r,B,r));clear()
+        _cep=input("%s[%s+%s%s] %sDigite o cep que deseja localizar:%s "%(n,B,r,n,B,r));clear()
         cep=[]
         for remove in _cep:
             if remove.isnumeric:cep.append(remove)
             else:pass
         cep="".join(cep)
-        if cep=="":print();input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,B,r,G,r,B,r))
+        if cep=="":print();input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
         else:
             rsp=get("https://cep.awesomeapi.com.br/%s"%(cep))
             rspj=rsp.json()
