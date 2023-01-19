@@ -50,23 +50,23 @@ class menu():
                     print("%s[%s+%s%s] %sDDD: %s%s"%(n,B,r,n,Y,str(rspj["ddd"]),r))
                     print("%s[%s+%s%s] %sLatitude: %s%s"%(n,B,r,n,Y,str(rspj["lat"]),r))
                     print("%s[%s+%s%s] %sLongitude: %s%s"%(n,B,r,n,Y,str(rspj["lng"]),r))
-                    input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,B,r,G,r,B,r))
+                    input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
                 case _:
-                    print("%s[%s!%s] %s%s%s"%(n,R,r,R,str(rspj["message"]),r));input("\n%s[%s+%s%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
+                    print("%s[%s!%s%s] %s%s%s"%(n,R,r,n,R,str(rspj["message"]),r));input("\n%s[%s+%s%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
     def vt():
-        _cll=input("%s[%s+%s%s] %sDigite o telefone que deseja verificar:%s "%(n,B,r,B,r))
+        _cll=input("%s[%s+%s%s] %sDigite o telefone que deseja verificar:%s "%(n,B,r,n,B,r))
         clear()
         cll=[]
         for remove in _cll:
             if remove.isnumeric:cll.append(remove)
             else:pass
         cll="".join(cll)
-        if cll == "":print();input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,B,r,G,r,B,r))
+        if cll == "":print();input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
         else:
             rsp=get("https://phonevalidation.abstractapi.com/v1/?api_key=b8d6fe3c1915403989b5e28416c75fbc&phone=%s"%(cll))
             rspj=rsp.json()
             menu.ndict(rspj)
-            input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,B,r,G,r,B,r))
+            input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
     # Função para usar quando eu tiver com preguiça de fazer print manualmente
     def nlist(LIST):
         for value in range(0, len(LIST)):
