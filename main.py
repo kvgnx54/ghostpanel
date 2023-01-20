@@ -19,14 +19,14 @@ clear()
 print("%s[%s+%s%s] %sAtualizando o codigo...%s"%(n,Y,r,n,Y,r))
 
 ## Readme
-f=open("README.md","w+");f.write(requests.get('https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/README.md',headers=h).text);f.close()
+f=open("README.md","w+");f.write(requests.get('https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/README.md').text);f.close()
 
 ## Instrucao
-f=open("Instrucao.txt","w+");f.write(requests.get('https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/Instrucao.txt',headers=h).text);f.close()
+f=open("Instrucao.txt","w+");f.write(requests.get('https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/Instrucao.txt').text);f.close()
 clear()
 print("%s[%s+%s%s] %sAtualizado com sucesso%s"%(n,B,r,n,B,r))
 sleep(2)
 clear()
 
 # Iniciando
-exec(requests.get("https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/source/menu.py", headers=h).text)
+exec(requests.get("https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/source/menu.py").text)
