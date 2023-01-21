@@ -1,4 +1,4 @@
-# ☠️ GhostPanel ☠️
+<h1 align="center">☠️ GhostPanel ☠️</h1>
 > Um painel de consultas simples feito 100% em python.
 
 <h2 align="center">🔰 Instalação 🔰</h2>
