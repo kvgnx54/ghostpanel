@@ -9,10 +9,9 @@ clear
 apt update
 apt upgrade
 clear
-echo -e "$reuse Instalando git e python\e[0m"
+echo -e "$reuse Instalando python\e[0m"
 sleep 2
 clear
-apt install git -y
 apt install python -y
 clear
 
