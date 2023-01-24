@@ -5,7 +5,7 @@
 <h2 align="center">🔰 Instalação 🔰</h2>
 <h3>⚙️ Automática</h3>
 
-> Funciona em qualquer máquina que o bash tiver instalado.
+> Funciona em qualquer terminal com bash e apt tiver instalado.
 
 > Não precisa ter o python instalado.
 
