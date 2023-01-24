@@ -1,7 +1,13 @@
 #!/bin/bash
-# pode nao funcionar muito bem, e meu primeiro script em shell
+# pode nao funcionar muito bem, esse é o meu primeiro script em shell
 
 reuse="\e[1m[\e[94m+\e[0m\e[1m]\e[94m"
+clear
+
+if [[ "$OSTYPE" != "linux-gnu" || "$OSTYPE" != "linux-android" ]];then
+    echo -e "$reuse Como seu sistema operacional não é Linux pode ser que ocorra algum erro, se for o caso instale o GhostPanel manualmente\e[0m"
+fi
+
 clear
 echo -e "$reuse Atualizando apt\e[0m"
 sleep 2
@@ -25,7 +31,7 @@ while true; do
     elif [ $opt == "n" ];then
         exit
     else
-        echo -e "\e[1m[\e[91m!\e[0m\e[1m] \e[91mEscreva s ou n.\e[0m"
+        echo -e "\e[1m[\e[91m!\e[0m\e[1m] \e[91mDigite s ou n.\e[0m"
         sleep 2
     fi
 done
