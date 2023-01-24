@@ -1,4 +1,5 @@
 <h1 align="center">☠️ GhostPanel ☠️</h1>
+
 > Um painel de consultas simples feito 100% em python.
 
 <h2 align="center">🔰 Instalação 🔰</h2>
@@ -14,6 +15,7 @@ git clone https://github.com/kvgnx54/ghostpanel
 cd ghostpanel
 bash install.sh
 ```
+
 <h3>📱 Termux</h3>
 
 > Baixando o python e as bibliotecas.
@@ -49,4 +51,4 @@ python main.py
 [+] updated_date: 
 [+] creation_date: 
 ```
-> Esses problemas de tradução ocorrem porque o script utiliza algumas API's que não são brasileiras e como o script imprimi automaticamente no terminal, alguns problemas de tradução ocorrem. Peço desculpas por todos os problemas. 
+> Esses problemas de tradução ocorrem porque o script utiliza algumas API's que não são brasileiras e como o script imprimi automaticamente no terminal, alguns problemas de tradução ocorrem. Peço desculpas por todos os problemas.
