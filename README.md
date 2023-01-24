@@ -3,8 +3,11 @@
 
 <h2 align="center">🔰 Instalação 🔰</h2>
 <h3>⚙️ Automática</h3>
+
 > Funciona em qualquer máquina que o bash tiver instalado.
+
 > Não precisa ter o python instalado.
+
 ```bash
 apt install git -y
 git clone https://github.com/kvgnx54/ghostpanel
