@@ -10,10 +10,11 @@
 > Não precisa ter o python instalado.
 
 ```bash
-apt install git -y
-git clone https://github.com/kvgnx54/ghostpanel
-cd ghostpanel
-bash install.sh
+curl https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/instalargp.sh > instalargp.sh
+bash instalargp.sh
+
+# se quiser remover o arquivo depois da instalação, use:
+rm instalargp.sh
 ```
 
 <h3>📱 Termux</h3>
