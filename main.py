@@ -13,7 +13,7 @@ n="\033[1m"
 
 
 try:import requests
-except:clear();print("%s[%s+%s%s] %sInstalando biblioteca requests%s\n"%(n,B,r,n,B,r));os.system('pip install requests');clear();print("%s[%s+%s%s] %sProcesso de instalação completo%s"%(n,B,r,n,B,n))
+except:clear();print("%s[%s+%s%s] %sInstalando biblioteca requests%s\n"%(n,B,r,n,B,r));os.system('pip install requests');clear();print("%s[%s+%s%s] %sProcesso de instalação completo%s"%(n,B,r,n,B,n));import requests
 clear()
 # atualização automatica do codigo
 print("%s[%s+%s%s] %sAtualizando o codigo...%s"%(n,Y,r,n,Y,r))
