@@ -50,6 +50,7 @@ class menu():
                     print("%s[%s+%s%s] %sDDD: %s%s"%(n,B,r,n,Y,str(rspj["ddd"]),r))
                     print("%s[%s+%s%s] %sLatitude: %s%s"%(n,B,r,n,Y,str(rspj["lat"]),r))
                     print("%s[%s+%s%s] %sLongitude: %s%s"%(n,B,r,n,Y,str(rspj["lng"]),r))
+                    print("%s[%s+%s%s] %sLink do Google maps: https://www.google.com/maps/place/%s,%s%s"%(n,B,r,n,Y,str(rspj["lat"]),str(rspj["lng"]),r))
                     input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
                 case _:
                     print("%s[%s!%s%s] %s%s%s"%(n,R,r,n,R,str(rspj["message"]),r));input("\n%s[%s+%s%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
@@ -64,6 +65,8 @@ class menu():
         if cll == "":print();input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
         else:
             rsp=get("https://phonevalidation.abstractapi.com/v1/?api_key=b8d6fe3c1915403989b5e28416c75fbc&phone=%s"%(cll))
+            if rsp.status_code != 200:
+                rsp=get(url="https://api.apilayer.com/number_verification/validate?number=%s"%(cll),headers={'apikey': '2nY2gxtScwH6mPVmOSYstS8oVmF4ltbb'})
             rspj=rsp.json()
             menu.ndict(rspj)
             input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
@@ -130,6 +133,7 @@ class menu():
             print("%s[%s+%s%s] %sLatitude: %s%s"%(n,Y,r,n,Y,str(rspj["lat"]),r))
             print("%s[%s+%s%s] %sLongitude: %s%s"%(n,Y,r,n,Y,str(rspj["lon"]),r))
             print("%s[%s+%s%s] %sIP: %s%s"%(n,Y,r,n,Y,str(rspj["query"]),r))
+            print("%s[%s+%s%s] %sLink do Google maps: https://www.google.com/maps/place/%s,%s%s"%(n,B,r,n,Y,str(rspj["lat"]),str(rspj["lon"]),r))
             input("\n%s[%s+%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
         else:print("%s[%s!%s%s] %sOcorreu um erro na requisição. Status:  %s%s%s"%(n,R,r,n,R,r,rspj["status"],r));input("%s[%s+%s%s%s] %sAperte a tecla %s%sEnter%s%s para voltar.%s"%(n,B,r,n,B,r,G,r,B,r))
     def inicio():
@@ -160,8 +164,8 @@ class menu():
                 case 4:menu.cep()
                 case 5:menu.whois()
                 case 6:menu.vt()
-                case 0:exit()
-                case _:print("%s[%s!%s]%s Digite o número da opção desejada.%s"%(n,R,r,R,r));sleep(2)
+                case 0:print("%s[%s+%s%s]%s Obrigado por baixar o ghostpanel%s"%(n,B,r,n,B,r));exit()
+                case _:print("%s[%s!%s%s]%s Digite o número da opção desejada.%s"%(n,R,r,n,R,r));sleep(2)
 
 if __name__=="__main__":
     menu.inicio()
