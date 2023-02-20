@@ -17,6 +17,7 @@ n = "\033[1m"
 
 try:
     import requests
+
 except:
     clear()
     print("%s[%s+%s%s] %sInstalando biblioteca requests%s\n" % (n, B, r, n, B, r))
