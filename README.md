@@ -1,5 +1,6 @@
 ![logo](https://github.com/kvgnx54/ghostpanel/blob/main/gplogo.jpg)
 <h1 align="center">GhostPanel</h1>
+> Última atualização: 03/02/2024
 
 > Um painel de consultas simples feito 100% em python.
 
