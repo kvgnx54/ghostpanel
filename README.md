@@ -1,5 +1,6 @@
 ![logo](https://github.com/kvgnx54/ghostpanel/blob/main/gplogo.jpg)
 <h1 align="center">GhostPanel</h1>
+
 > Última atualização: 03/02/2024
 
 > Um painel de consultas simples feito 100% em python.
@@ -11,7 +12,8 @@
 
 ```bash
 curl -o install.sh https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/install.sh
-bash install.sh && rm -r install.sh
+bash install.sh
+rm -r install.sh
 ```
 
 <h3>📱 Linux/Termux</h3>
@@ -39,7 +41,8 @@ python main.py
 
 ```bash
 curl -o update.sh https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/update.sh
-bash update.sh && rm -r update.sh
+bash update.sh
+rm -r update.sh
 ```
 <h2 align="center">⚙️ Problemas ⚙️</h2>
 
