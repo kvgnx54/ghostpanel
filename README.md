@@ -4,21 +4,16 @@
 > Um painel de consultas simples feito 100% em python.
 
 <h2 align="center">🔰 Instalação 🔰</h2>
-<h3>⚙️ Automática</h3>
-
-> Funciona em qualquer terminal com bash e apt tiver instalado.
+<h3>⚙️ Automática(Linux/Termux)</h3>
 
 > Não precisa ter o python instalado.
 
 ```bash
-curl https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/instalargp.sh > instalargp.sh
-bash instalargp.sh
-
-# se quiser remover o arquivo depois da instalação, use:
-rm instalargp.sh
+curl -o install.sh https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/install.sh
+bash install.sh && rm -r install.sh
 ```
 
-<h3>📱 Termux</h3>
+<h3>📱 Linux/Termux</h3>
 
 > Baixando o python e as bibliotecas.
 ```bash
@@ -27,13 +22,24 @@ pkg upgrade
 pkg install python
 pkg install git
 git clone https://github.com/kvgnx54/ghostpanel
+pip install requests
 ```
 > Quando for utilizar o GhostPanel:
 ```bash
+cd
 cd ghostpanel
 python main.py
 ```
+<h2 align="center">♻️ Atualização de código ♻️</h2>
+<h3>📱 Linux/Termux</h3>
 
+> É importante sempre verificar se há atualização disponível para o código.
+> Futuramente o arquivo main.py vai ter uma opção de verificação automática.
+
+```bash
+curl -o update.sh https://raw.githubusercontent.com/kvgnx54/ghostpanel/main/update.sh
+bash update.sh && rm -r update.sh
+```
 <h2 align="center">⚙️ Problemas ⚙️</h2>
 
 > Se você achou algum problema no código, crie um issue na parte de issues.
